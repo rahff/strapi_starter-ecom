@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sub_category_sub_categories",
+  "info": {
+    "displayName": "sub-category",
+    "icon": "arrows-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "filters": {
+      "type": "json"
+    }
+  }
+}

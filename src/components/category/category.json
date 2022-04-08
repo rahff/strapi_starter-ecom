@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_category_categories",
+  "info": {
+    "displayName": "category",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sub_categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sub-category.sub-category"
+    }
+  }
+}
