@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkout_sessions",
+  "info": {
+    "singularName": "checkout-session",
+    "pluralName": "checkout-sessions",
+    "displayName": "checkout_session",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payement_process": {
+      "type": "enumeration",
+      "enum": [
+        "stripe",
+        "paypal"
+      ]
+    },
+    "checkoutItems": {
+      "type": "json"
+    },
+    "callbackUrl": {
+      "type": "string"
+    },
+    "sessionId": {
+      "type": "uid"
+    }
+  }
+}

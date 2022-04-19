@@ -21,9 +21,6 @@
     "price": {
       "type": "decimal"
     },
-    "uid": {
-      "type": "uid"
-    },
     "imgs": {
       "type": "media",
       "multiple": true,
@@ -50,6 +47,9 @@
     },
     "keywords": {
       "type": "json"
+    },
+    "stock": {
+      "type": "integer"
     }
   }
 }

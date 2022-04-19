@@ -1,0 +1,3 @@
+1 creé une session sur stripe => generer un objet line_items sur les checkoutItems du front;
+recuperé le sessionId pour crée l'objet sessionId en db;
+return sessionId et pubKey au front
