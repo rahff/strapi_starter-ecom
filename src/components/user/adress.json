@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_user_adresses",
+  "info": {
+    "displayName": "adress",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "numero": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "integer"
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}

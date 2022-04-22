@@ -16,9 +16,12 @@ module.exports = createCoreController('api::checkout-session.checkout-session', 
             if(session.id){
                 const data = {checkoutItems: sessionConfig.line_items, sessionId: session.id, payement_process: body.paymentProcess, callbackUrl: body.callbackUrl}
                 const entity = await strapi.service('api::checkout-session.checkout-session').create({data});
-                console.log(entity);
             }
-            ctx.body = {sessionId: session.id, pubKey: stripePubKey}
+            if(body.paymentProcess === "stripe"){
+                ctx.body = { stripe: {sessionId: session.id, pubKey: stripePubKey}, paypal: null}
+            }else{
+                ctx.body = {paypal: {}}
+            }
   }
 }));
  
